@@ -1,0 +1,23 @@
+<!-- <div class="card"*ngIf="listAnime">
+  <a href="#" target="_blank">
+    <img [src]="listAnime.image_url" alt="Anime poster">
+    <h3>{{listAnime.title}}</h3>
+  </a>
+
+</div> -->
+<ng-container class="content">
+  <div class="item" *ngIf="listAnime ;else templateName" >
+    <nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate">
+      <nz-card-meta nzDescription="{{listAnime.title}}"></nz-card-meta>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img alt="example" [src]="listAnime.image_url" />
+    </ng-template>
+    </div>
+
+
+
+  </ng-container>
+  <ng-template #templateName>
+    <H3>No database</H3>
+  </ng-template>

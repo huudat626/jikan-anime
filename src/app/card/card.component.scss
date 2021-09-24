@@ -1,0 +1,47 @@
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.item{
+
+  padding: 50px;
+  margin: 50px;
+  justify-content: space-between;
+  display: inline-block;
+  /* border: 1px solid; */
+  padding: 10px;
+  box-shadow: 1px 2px #888888;
+}
+.item:hover{
+
+    background-color: rgb(219, 219, 199);
+
+}
+nz-card{
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 40px;
+  visibility: visible;
+  /* //transform-style: random($limit: 1); */
+}
+nz-card-meta{
+  width: 200px;
+  text-align: center;
+  left: 200px;
+  top: 90px;
+  bottom: 100px;
+  flex-direction: row;
+  overflow: hidden;
+    white-space: nowrap;
+}
+img{
+  width: 240px;
+  height: 240px;
+}
+.ant-card-cover {
+  display: inline;
+  width: 100%;
+}
