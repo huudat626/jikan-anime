@@ -6,18 +6,18 @@
 
 </div> -->
 <ng-container class="content">
-  <div class="item" *ngIf="listAnime ;else templateName" >
+  <div class="item" *ngIf="listAnime ;else templateName">
     <nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate">
       <nz-card-meta nzDescription="{{listAnime.title}}"></nz-card-meta>
     </nz-card>
     <ng-template #coverTemplate>
       <img alt="example" [src]="listAnime.image_url" />
     </ng-template>
-    </div>
+  </div>
 
 
 
-  </ng-container>
-  <ng-template #templateName>
-    <H3>No database</H3>
-  </ng-template>
+</ng-container>
+<ng-template #templateName>
+  <H3>No database</H3>
+</ng-template>
